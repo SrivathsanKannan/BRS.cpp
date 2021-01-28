@@ -28,7 +28,7 @@ void vline(char ch)
 
 void a::install()
 {
-    cout<<"Enter bus no.: ";
+    cout<<" Enter Bus no.: ";
     cin>>bus[p].busn;
     cout<<"\n Enter Driver's name: ";
     cin>>bus[p].driver;
@@ -94,12 +94,11 @@ void a::show()
 {
     int n;
     char number[5];
-    top:
     cout<<" Enter Bus no.: ";
     cin>>number;
     for(n=0; n<=p; n++)
     {
-        if(strcmp(bus[p].busn, number)==0)
+        if(strcmp(bus[n].busn, number)==0)
         break;
     }
     while(n<=p)
